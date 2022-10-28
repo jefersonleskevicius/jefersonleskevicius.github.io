@@ -1012,7 +1012,7 @@ function remover(item) {
       
    }
    
-   for(var i=1;i<15;i++) {
+   for(var i=1;i<12;i++) {
       total_geral = total_geral + (parseFloat(document.getElementById('valor_item_'+i).value, 2) * parseInt(document.getElementById('quantidade_item_'+i).value));
    }
    
@@ -1044,7 +1044,7 @@ function adicionar(item) {
    valor_total_item = valor_item * quantidade_item;   
    span_total_item.innerHTML = valor_total_item.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
    
-   for(var i=1;i<15;i++) {
+   for(var i=1;i<12;i++) {
       total_geral = total_geral + (parseFloat(document.getElementById('valor_item_'+i).value, 2) * parseInt(document.getElementById('quantidade_item_'+i).value));
    }
    
@@ -1137,7 +1137,7 @@ function recomecar() {
 	input_troco.value = '';
 	input_cartao.value = '';
 		
-	for(var item=1;item<15;item++) {
+	for(var item=1;item<12;item++) {
 	
 	    var input_quantidade_item = document.getElementById('quantidade_item_'+item); 
    
